@@ -24,6 +24,80 @@
         
       </nav>
     </header>
+    <section class="cart-icon">
+      <h1><i class="fa fa-cart-plus"></i></h1>
+      </section>
+      <h1 class="slider-head">
+          We deliver the best products to our customers
+      </h1>
+      <section class="section-area">
+          <div class="slider">
+              <div class="slides">
+                  <input type="radio" name="radio-btn" id="radio1">
+                  <input type="radio" name="radio-btn" id="radio2">
+                  <input type="radio" name="radio-btn" id="radio3">
+                  <input type="radio" name="radio-btn" id="radio4">
+                  <input type="radio" name="radio-btn" id="radio5">
+                  <div class="slide first">
+                      <h1 class="prod-info" style="color: #ff8533; padding-left:20px;">
+                          Rolex Yacht-Master 40 Everose Gold
+                      </h1>
+                      <img src="./images/prod1.png" alt="">
+                  </div>
+                  <div class="slide">
+                      <h1 class="prod-info" style="color: #ff8533;">
+                          Rolex Daytona Everose Gold 18K
+                      </h1>
+                      <img src="./images/prod2.png" alt="">
+                  </div>
+                  <div class="slide">
+                      <h1 class="prod-info" style="color: #ff8533;">
+                          Rolex Cellini Gold
+                      </h1>
+                      <img src="./images/prod3.png" alt="">
+                  </div>
+                  <div class="slide">
+                      <h1 class="prod-info" style="color: #ff8533;">
+                          Zenith Men's Defy El Primero 21
+                      </h1>
+                      <img src="./images/prod4.png" alt="">
+                  </div>
+                  <div class="slide">
+                      <h1 class="prod-info" style="color: #ff8533;">
+                          Rolex Submariner Hulk
+                      </h1>
+                      <img src="./images/prod5.png" alt="">
+                  </div>
+                  <div class="auto-nav">
+                      <div class="auto-btn1"></div>
+                      <div class="auto-btn2"></div>
+                      <div class="auto-btn3"></div>
+                      <div class="auto-btn4"></div>
+                      <div class="auto-btn5"></div>
+                  </div>
+              </div>
+              <div class="manu-nav">
+                  <label for="radio1" class="manu-btn"></label>
+                  <label for="radio2" class="manu-btn"></label>
+                  <label for="radio3" class="manu-btn"></label>
+                  <label for="radio4" class="manu-btn"></label>
+                  <label for="radio5" class="manu-btn"></label>
+              </div>
+  
+          </div>
+      </section>
+      <script type="text/javascript">
+      var count = 1;
+      setInterval(function(){
+          document.getElementById('radio' + count).checked = true;
+          count++;
+          if(count > 5) {
+              count = 1;
+          }
+      
+      }, 4000);
+  
+      </script>
   <footer class="footer">
     <div class="footer-text">
       <h4>About Us</h4>
