@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border: 0;
+  outline: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+  background-color: #fafbfd;
+}
+header {
+  background: #ff7d56;
+  display: flex;
+}
+.brand-details {
+  display: flex;
+  align-items: center;
+  flex: 0.2;
+}
+header h1 {
+  color: #fff;
+  align-items: center;
+  margin-left: 40px;
+}
+header ul {
+  display: flex;
+  flex: 2;
+  justify-content: flex-end;
+}
+header ul a {
+  display: block;
+  padding: 2rem;
+  color: #fff;
+}
+header ul a:hover {
+  background: #fff;
+  color: #ff7d56;
+}
+@media screen and (max-width: 750px) {
+  header {
+    position: relative;
+  }
+  #brand-details {
+    flex: 1;
+  }
+  header nav {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background: #ff7d56;
+
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+  }
+  header nav.show {
+    max-height: 100%;
+    overflow: visible;
+    transition: all 0.25s ease-in-out;
+  }
+  header nav ul {
+    flex-direction: column;
+    background: #ff7d56;
+  }
+  .nav-icon {
+    display: block;
+  }
+}
+
+footer {
+  background-color: #ff7d56;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: #f9fafa;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 200px;
+  position: fixed;
+}
+.footer-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer-text h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-text p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.link-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.link-items li {
+  margin: 0 10px;
+}
+.link-items a {
+  text-decoration: none;
+  color: #f9fafa;
+  transition: color 0.4s ease;
+}
+.footer-bottom {
+  padding: 10px;
+  background-color: #3f3f3f;
+  text-align: center;
+  font-size: 18px;
+  word-spacing: 2px;
+  bottom: 0;
+  width: 100%;
+  color: #f9fafa;
+}
