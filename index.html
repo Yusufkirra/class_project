@@ -9,6 +9,65 @@
     <link rel="stylesheet" href="css/all.min.css" />
   </head>
   <style>
+
+
+form
+{
+    margin: 35px;
+}
+
+.contact
+{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.input-icons i {
+    position: absolute;
+}
+         
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+         
+.icon {
+    padding: 10px;
+    color: black;
+    min-width: 50px;
+    text-align: center;
+}
+         
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+         
+h2 {
+    color: black;
+}
+
+.textarea-field
+{
+    height: 140px;
+    padding: 10px;
+}
+
+.btn
+{
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 18px;
+    padding: 12px;
+    background-color: black;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
     .review {
     display: flex;
     justify-content: center;
@@ -245,6 +304,39 @@
           </div>
         </div>
       </section>
+      <section class="contact">
+        <div class="contact-box">
+            <form style="max-width:450px;margin:auto">
+                <h2 class="contact">Contact Us</h2>
+                <div class="input-icons">
+                    <i class="fa fa-user icon">
+                  </i>
+                    <input class="input-field" type="text" placeholder="First Name"required>
+                </div>
+    
+                <div class="input-icons">
+                    <i class="fa fa-user icon">
+                  </i>
+                    <input class="input-field" type="text" placeholder="Last Name"required>
+                </div>
+     
+                <div class="input-icons">
+                    <i class="fa fa-envelope icon">
+                  </i>
+                    <input class="input-field" type="email" placeholder="Email"required>
+                </div>
+     
+                <div class="input-icons">
+                    <i class="fa fa-phone icon">
+                  </i>
+                    <input class="input-field" type="number" placeholder="Phone Number"required>
+                </div>
+                <textarea type="text" class="input-field textarea-field" placeholder="Message" required>
+                </textarea>
+                <button class="btn">Send Message</button><br><br>
+        </div>
+            </form>
+          </section>
   <footer class="footer">
     <div class="footer-text">
       <h4>About Us</h4>
