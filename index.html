@@ -8,6 +8,70 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/all.min.css" />
   </head>
+  <style>
+    .review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .review-box{
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+  }
+  .review-icon{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: indigo;
+    background-color: #ff7d56;
+  }
+  .name-user strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+  }
+  .name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+  }
+  .review-top{
+    display: flex;
+    align-items: center;
+  }
+  .review-box-container{
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .name-user{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem;
+  }
+  .rating{
+    color: #f9d71c;
+    padding-left: 10rem;
+  }
+  .review-text{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+  }
+  .review-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+  }
+  </style>
   <body>
     <header>
       <div class="brand-details">
@@ -86,18 +150,101 @@
   
           </div>
       </section>
-      <script type="text/javascript">
-      var count = 1;
-      setInterval(function(){
-          document.getElementById('radio' + count).checked = true;
-          count++;
-          if(count > 5) {
-              count = 1;
-          }
-      
-      }, 4000);
-  
-      </script>
+      <section class="review">
+        <div class="review-title">
+          <h2>Products review</h2>
+        </div>
+        <div class="review-box-container">
+          <div class="review-box">
+            <div class="review-top">
+              <div class="review-icon">M</div>
+              <div class="name-user">
+                <strong>Mike Dean</strong>
+                <span>Asus Strix</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="review-text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Sapiente, molestiae quod! Consectetur, consequuntur similique pariatur 
+                aspernatur aliquam sit, explicabo, culpa perferendis vitae quo ducimus 
+                harum maxime itaque iste animi ullam?</p>
+            </div>
+          </div>
+          <div class="review-box">
+            <div class="review-top">
+              <div class="review-icon">S</div>
+              <div class="name-user">
+                <strong>Smith Rowe</strong>
+                <span>Asus ROG</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-stroke"></i>
+              </div>
+            </div>
+            <div class="review-text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Sapiente, molestiae quod! Consectetur, consequuntur similique pariatur 
+                aspernatur aliquam sit, explicabo, culpa perferendis vitae quo ducimus 
+                harum maxime itaque iste animi ullam?</p>
+            </div>
+          </div>
+          <div class="review-box">
+            <div class="review-top">
+              <div class="review-icon">P</div>
+              <div class="name-user">
+                <strong>Pastor Fredrick</strong>
+                <span>HP Pavilion</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="review-text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Sapiente, molestiae quod! Consectetur, consequuntur similique pariatur 
+                aspernatur aliquam sit, explicabo, culpa perferendis vitae quo ducimus 
+                harum maxime itaque iste animi ullam?</p>
+            </div>
+          </div>
+          <div class="review-box">
+            <div class="review-top">
+              <div class="review-icon">G</div>
+              <div class="name-user">
+                <strong>Gabriel Jesus</strong>
+                <span>MSI</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+            <div class="review-text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Sapiente, molestiae quod! Consectetur, consequuntur similique pariatur 
+                aspernatur aliquam sit, explicabo, culpa perferendis vitae quo ducimus 
+                harum maxime itaque iste animi ullam?</p>
+            </div>
+          </div>
+        </div>
+      </section>
   <footer class="footer">
     <div class="footer-text">
       <h4>About Us</h4>
@@ -124,6 +271,18 @@
     <div class="footer-bottom">Copyright &copy; All Rights Reserved 2022</div>
   </footer>
   <script src="js/alert.js"></script>
-    <script src="js/all.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script type="text/javascript">
+    var count = 1;
+    setInterval(function(){
+        document.getElementById('radio' + count).checked = true;
+        count++;
+        if(count > 5) {
+            count = 1;
+        }
+    
+    }, 4000);
+
+    </script>
 </body>
 </html>
